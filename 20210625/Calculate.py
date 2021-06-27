@@ -1,27 +1,45 @@
 
 def Calculate(*args):
-    q = input("add/sub/mul/div ? = ")
-    if m == "add":
-        result = 0
-        for i in args:
-            result = result + i
-            print("Add = ",result)
-    elif m == "sub":
-        result = 0
-        for i in args:
-            result = result - i
-            print("Subtract = ",result)
-    elif m == "div":
-        result = 1
-        for i in args:
-            result = result / i
-            print("Divide = ",result)
-    elif m == "mul":
-        result = 1
-        for i in args:
-            result = result * i
-            print("Multiply = ",result)
-    return result
+    method = input("add/sub/mul/div ? = ")
     
-    if __name__ == "__main__":
-        print(Calculate(1,2,3))
+    if method == "add":
+        result_add = 0
+        for i in args:
+            result_add = result_add + i
+            return result_add
+        
+    elif method == "sub":
+        result = 0
+        for i in args:
+            if result == 0:
+                result_sub = i
+                result ==1
+            else:
+                result_sub = result_sub - i
+                return print("Subtract = ",result_sub)
+    elif method == "div":
+        result = 0
+        for i in args:
+            if result == 0:
+                result_div = i
+                result == 1
+            else:
+                if i == 0:
+                    return print("Cannot divide 0", Calculate(*args))
+                    result_div = result_div / i
+        return print("Divide = ",result_div)
+    elif method == "mul":
+        result = 0
+        for i in args:
+            if result == 0:
+                result_mul = i
+                result ==1
+            else:
+                if i == 0 :
+                    a =input("You just multiply 0, Continue to input, yes : ")
+                    return a
+                    if a == "yes":
+                        pass
+                result_mul = result_mul * i
+        return print("Multiply = ",result)
+    
