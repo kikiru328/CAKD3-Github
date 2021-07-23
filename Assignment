@@ -12,5 +12,21 @@
 - 탐색적 분석 << insight를 설명할 정도가 필요함.
 
 * 분석과제를 정의했는지
-* 기존 정보를 정의했는지,
+* 기존 정보를 정의했는지
 * 인사이트가 생각한 방향으로 흘러가는지
+
+(민찬님 data)
+scale : float or array_like of floats
+    Standard deviation (spread or "width") of the distribution. Must be
+    non-negative.
+np.random.normal 이 정규분포에 따르는 무작위 데이터를 뽑는 함수고
+평균값, scale, size를 매개변수로 넣을 수 있는데요
+def ctrl_n(x, coef):
+    return int(np.random.normal(x*coef, scale = x/5, size = 1)[0])
+여기에 scale = x/5로 만든 이유는 딱히 통계적으로 의미있어서가 아니라 값에 따라 적절히 값 분포가 벌어지도록 넣어본거에요 ㅎㅎ
+임희진님이 모두에게:  09:52 AM
+오오오....
+박민아님이 모두에게:  09:53 AM
+아아 그렇군요 왜 스케일을 x/5로 하셨는지 궁금했어요
+감사합니다
+
