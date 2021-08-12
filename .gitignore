@@ -1,2 +1,4 @@
 
 *.txt
+db/CAKD3_TABLESPACE
+db/LOG_CAKD3
