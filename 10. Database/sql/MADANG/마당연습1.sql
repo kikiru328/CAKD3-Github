@@ -97,12 +97,8 @@ order by customer.custid;
  select name, saleprice
  from customer, orders
  where customer.custid = orders.custid;
- 
- 
- 
- 
- -------------------점심전 해보기---------------------------------------------
- 
+  
+  
  -- Q. 고객별로 주문한 모든 도서의 총 판매액을 구하고, 고객별로 정렬하시오.
 SELECT name, SUM(saleprice) "총 판매액"
 FROM customer, orders

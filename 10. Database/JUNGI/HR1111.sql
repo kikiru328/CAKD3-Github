@@ -3,7 +3,6 @@ SELECT last_name, 'is a', job_id from employees;
 SELECT last_name ||'is a'|| job_id from employees;
 
 SELECT DISTINCT job_id FROM employees;
-wwww
 SELECT * FROM employees WHERE commission_pct is null;
 SELECT * FROM employees WHERE commission_pct is not null;
 
